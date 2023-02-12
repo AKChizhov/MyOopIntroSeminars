@@ -8,3 +8,4 @@ public abstract class Mental extends BaseHero{
     }
     
 }
+

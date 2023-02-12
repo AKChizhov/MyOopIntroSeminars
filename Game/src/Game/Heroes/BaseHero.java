@@ -26,4 +26,5 @@ public abstract class BaseHero {
             damage = damage + multy + univer;
             return damage;
         }
+
 }

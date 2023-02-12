@@ -2,8 +2,8 @@ package Game.Heroes;
 
 public class Monk extends Mental{
 
-    public Monk(String nameCharacter, int damage, int healthPoints, int defence, int evolution, int healing, int acceleration) {
-        super(nameCharacter, damage, healthPoints, defence, evolution, healing);
+    public Monk(String nameCharacter, int acceleration) {
+        super(nameCharacter, 40, 100 , 60, 10, 20);
         
     }
     
