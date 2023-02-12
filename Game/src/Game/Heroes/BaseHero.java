@@ -8,7 +8,7 @@ public abstract class BaseHero {
     protected int defence;
     protected int evolution;
 
-    public BaseHero(String nameCharacter,int damage,int healthPoints,int defence,int evolution) {
+    public BaseHero(String nameCharacter,int damage ,int healthPoints,int defence,int evolution ) {
         this.nameCharacter = nameCharacter;
         this.damage = damage;
         this.healthPoints = healthPoints;
@@ -17,4 +17,13 @@ public abstract class BaseHero {
 
         }
 
+        public int Endurance(int damage ){    
+            healthPoints = healthPoints + defence - damage;
+            return healthPoints;
+        }   
+        
+        public int StrikeLong( int accuracy, int multy, int univer){
+            damage = damage + multy + univer;
+            return damage;
+        }
 }
