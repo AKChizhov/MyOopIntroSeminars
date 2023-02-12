@@ -1,0 +1,9 @@
+package Game.Heroes;
+
+public class Melee extends BaseHero {
+
+    public Melee(String nameCharacter, int damage, int healthPoints, int defence, int evolution) {
+        super(nameCharacter, damage, healthPoints, defence, evolution);
+    }
+    
+}
