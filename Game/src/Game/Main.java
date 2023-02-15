@@ -1,17 +1,6 @@
 package Game;
 import java.util.ArrayList;
 import Game.Heroes.*;
-/* 
-import Game.Heroes.Archer;
-import Game.Heroes.BaseHero;
-import Game.Heroes.Crossbowman;
-import Game.Heroes.Mag;
-import Game.Heroes.Monk;
-import Game.Heroes.Peasant;
-import Game.Heroes.Pikeman;
-import Game.Heroes.Robber;
-import Game.Heroes.Sniper;
-*/
 
 public class Main {
     public static void main(String[] args) throws Exception {
