@@ -7,4 +7,8 @@ public class Robber extends Melee{
         
     }
     
+    @Override
+    public String toString(){
+        return " I'm a Robber ( разбойник ) " + nameCharacter +" из "+getClass()+" c hashCode "+hashCode();
+    }     
 }

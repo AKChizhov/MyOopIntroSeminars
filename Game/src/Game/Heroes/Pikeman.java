@@ -7,4 +7,8 @@ public class Pikeman extends Melee{
 
     }
     
+    @Override
+    public String toString(){
+        return " I'm a Pikeman ( копейщик ) " + nameCharacter + " из "+getClass()+" c hashCode "+hashCode();
+    }     
 }
