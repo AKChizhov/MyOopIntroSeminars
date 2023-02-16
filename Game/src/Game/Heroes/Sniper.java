@@ -10,5 +10,16 @@ public class Sniper extends LongRange {
     @Override
     public String toString(){
         return " I'm a Sniper (стрелок-снайпер ) " + nameCharacter +" из "+getClass()+" c hashCode "+hashCode();
-    }     
+    } 
+    
+    @Override
+    public void getInfo(){
+           
+    }
+
+    @Override
+    public String step(){
+
+        return("");
+    }
 }

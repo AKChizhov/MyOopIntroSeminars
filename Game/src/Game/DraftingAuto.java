@@ -26,6 +26,7 @@ public class DraftingAuto {
         System.out.println("");
         list2.forEach(n-> System.out.println(n.toString()));
         System.out.println("\n");
+
         return list2;
     }
     

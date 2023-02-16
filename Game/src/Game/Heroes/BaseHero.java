@@ -1,6 +1,8 @@
 package Game.Heroes;
 
-public abstract class BaseHero {
+import Game.interFaceGame;
+
+public abstract class BaseHero implements interFaceGame{
     
     protected String nameCharacter;
     protected int damage;

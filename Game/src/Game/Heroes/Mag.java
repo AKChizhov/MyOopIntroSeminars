@@ -10,5 +10,16 @@ public class Mag extends Mental {
     @Override
     public String toString(){
         return " I'm a Mag ( маг ) " + nameCharacter + " из "+getClass()+" c hashCode "+hashCode();
-    }     
+    } 
+    
+    @Override
+    public void getInfo(){
+           
+    }
+
+    @Override
+    public String step(){
+
+        return("");
+    }
 }

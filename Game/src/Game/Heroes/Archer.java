@@ -17,5 +17,18 @@ public class Archer extends LongRange{
     @Override
     public String toString(){
         return " I'm a Archer (стрелок-лучник) "+nameCharacter +" из "+getClass()+" c hashCode "+hashCode();
-    }     
+    }    
+    
+    @Override
+    public void getInfo(){
+           
+    }
+
+    @Override
+    public String step(){
+
+        return("");
+    }
+
+
 }

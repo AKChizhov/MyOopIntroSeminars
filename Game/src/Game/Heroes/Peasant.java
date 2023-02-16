@@ -10,5 +10,16 @@ public class Peasant extends BaseHero{
     @Override
     public String toString(){
         return " I'm a Peasant ( крестьянин ) " + nameCharacter + " из "+getClass()+" c hashCode "+hashCode();
-    }     
+    }  
+    
+    @Override
+    public void getInfo(){
+           
+    }
+
+    @Override
+    public String step(){
+
+        return("");
+    }
 }

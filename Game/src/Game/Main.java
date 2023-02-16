@@ -6,6 +6,7 @@ import Game.Heroes.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+        System.out.print("\033[H\033[2J");
         System.out.println("Hello, My Game !");
         ArrayList<BaseHero> list = new ArrayList<>();
 
@@ -24,6 +25,7 @@ public class Main {
         System.out.println("\n\n\tThis is a platoon of 10 fighters. Specialization received by Random");
         platoonAuto = DraftingAuto.MyRealSubdivision();
         //platoon.forEach(n-> System.out.println(n.toString()));
+        
 
     }    
 

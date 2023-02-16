@@ -10,5 +10,16 @@ public class Pikeman extends Melee{
     @Override
     public String toString(){
         return " I'm a Pikeman ( копейщик ) " + nameCharacter + " из "+getClass()+" c hashCode "+hashCode();
-    }     
+    } 
+    
+    @Override
+    public void getInfo(){
+           
+    }
+
+    @Override
+    public String step(){
+
+        return("");
+    }
 }
