@@ -1,7 +1,7 @@
 package Game;
+
 import java.util.ArrayList;
 import java.util.Random;
-
 import Game.Heroes.*;
 
 public class Main {
@@ -9,29 +9,24 @@ public class Main {
         System.out.println("Hello, My Game !");
         ArrayList<BaseHero> list = new ArrayList<>();
 
-        list.add (new Peasant(getname(), 20));
         Peasant Tom = new Peasant(getname(), 10);
-
         System.out.println(Tom.Endurance( 20));
 
         Archer Tim = new Archer(getname(), 50);
         System.out.println(Tim.StrikeLong(0, 20, 0));
-
-        Robber Bill = new Robber(getname(), 40);
-        Pikeman Rod = new Pikeman(getname(), 20);
-        Crossbowman Mike = new Crossbowman(getname(), 10);
-        Sniper Bom = new Sniper(getname(), 50);
-        Monk John = new Monk(getname(), 10);
-        Mag Raul = new Mag(getname(), 20);
-
-        list.add(Tim);list.add(Tom);list.add(Bill);list.add(Rod);list.add(Mike);list.add(Bom);list.add(John);list.add(Raul);
-        list.add (new Pikeman(getname(), 40));
-        list.add (new Mag(getname(),20));
         list.forEach(n-> System.out.println(n.toString()));
+
+        ArrayList<BaseHero> platoonHand = new ArrayList<>();
+        System.out.println("\n\n\tThis is a list of the military specialties");
+        platoonHand = DraftingHand.ListOfSpecialties();
+        
+        ArrayList<BaseHero> platoonAuto = new ArrayList<>();
+        System.out.println("\n\n\tThis is a platoon of 10 fighters. Specialization received by Random");
+        platoonAuto = DraftingAuto.MyRealSubdivision();
+        //platoon.forEach(n-> System.out.println(n.toString()));
+
     }    
 
-        
- 
     private static String getname(){
         return String.valueOf(Names.values()[new Random().nextInt(Names.values().length)]);
     }
