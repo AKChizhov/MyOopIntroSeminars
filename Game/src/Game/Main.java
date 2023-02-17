@@ -17,16 +17,16 @@ public class Main {
         System.out.println(Tim.StrikeLong(0, 20, 0));
         list.forEach(n-> System.out.println(n.toString()));
 
-        ArrayList<BaseHero> platoonHand = new ArrayList<>();
-        System.out.println("\n\n\tThis is a list of the military specialties");
-        platoonHand = DraftingHand.ListOfSpecialties();
+        //ArrayList<BaseHero> platoonHand = new ArrayList<>();
+        //System.out.println("\n\n\tThis is a list of the military specialties");
+        //platoonHand = DraftingHand.ListOfSpecialties();
         
         ArrayList<BaseHero> platoonAuto = new ArrayList<>();
         System.out.println("\n\n\tThis is a platoon of 10 fighters. Specialization received by Random");
         platoonAuto = DraftingAuto.MyRealSubdivision();
         //platoon.forEach(n-> System.out.println(n.toString()));
+        DraftingAuto.MyRealSubdivision2();
         
-
     }    
 
     private static String getname(){
