@@ -7,25 +7,28 @@ import Game.Heroes.*;
 public class Main {
     public static void main(String[] args) throws Exception {
         System.out.print("\033[H\033[2J");
-        System.out.println("Hello, My Game !");
+        System.out.println("\n\tHello, My Game !");
+        /* 
         ArrayList<BaseHero> list = new ArrayList<>();
-
         Peasant Tom = new Peasant(getname(), 10);
         System.out.println(Tom.Endurance( 20));
-
         Archer Tim = new Archer(getname(), 50);
         System.out.println(Tim.StrikeLong(0, 20, 0));
         list.forEach(n-> System.out.println(n.toString()));
-
+        */
         //ArrayList<BaseHero> platoonHand = new ArrayList<>();
         //System.out.println("\n\n\tThis is a list of the military specialties");
         //platoonHand = DraftingHand.ListOfSpecialties();
         
-        ArrayList<BaseHero> platoonAuto = new ArrayList<>();
-        System.out.println("\n\n\tThis is a platoon of 10 fighters. Specialization received by Random");
-        platoonAuto = DraftingAuto.MyRealSubdivision();
+        //ArrayList<BaseHero> platoonAuto = new ArrayList<>();
+        //platoonAuto = DraftingAuto.MyRealSubdivision();
         //platoon.forEach(n-> System.out.println(n.toString()));
-        DraftingAuto.MyRealSubdivision2();
+
+        System.out.println("\n\tThis is a platoon BLUE of 10 fighters. Specialization received by Random");
+        DraftingAutoAll.MyRealSubdivision(1);// Формирование взвода BLUE
+        System.out.println("\n\tThis is a platoon RED of 10 fighters. Specialization received by Random");
+        DraftingAutoAll.MyRealSubdivision(0);// Формирование взвода RED
+
         
     }    
 

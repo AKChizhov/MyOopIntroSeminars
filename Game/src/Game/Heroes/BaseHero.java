@@ -5,13 +5,15 @@ import Game.interFaceGame;
 public abstract class BaseHero implements interFaceGame{
     
     protected String nameCharacter;
+    protected int speed;
     protected int damage;
     protected int healthPoints;
     protected int defence;
     protected int evolution;
 
-    public BaseHero(String nameCharacter,int damage ,int healthPoints,int defence,int evolution ) {
+    public BaseHero(String nameCharacter,int speed, int damage ,int healthPoints,int defence,int evolution ) {
         this.nameCharacter = nameCharacter;
+        this.speed = speed;
         this.damage = damage;
         this.healthPoints = healthPoints;
         this.defence = defence;
