@@ -31,4 +31,8 @@ public abstract class BaseHero implements interFaceGame{
             return damage;
         }
 
+        public int getSpeed() {
+            return speed;
+        }
+
 }

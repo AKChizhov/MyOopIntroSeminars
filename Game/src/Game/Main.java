@@ -1,6 +1,7 @@
 package Game;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Random;
 import Game.Heroes.*;
 
@@ -27,8 +28,19 @@ public class Main {
         System.out.println("\n\tThis is a platoon BLUE of 10 fighters. Specialization received by Random");
         DraftingAutoAll.MyRealSubdivision(1);// Формирование взвода BLUE
         System.out.println("\n\tThis is a platoon RED of 10 fighters. Specialization received by Random");
-        DraftingAutoAll.MyRealSubdivision(0);// Формирование взвода RED
+        //DraftingAutoAll.MyRealSubdivision(0);// Формирование взвода RED
+        ArrayList<BaseHero> platoonRed = DraftingAutoAll.MyRealSubdivision(0);
+        
+        platoonRed.sort(new Comparator<BaseHero>() {
+            @Override
+            public int compare(BaseHero o1, BaseHero o2 ){
+                return o1.getSpeed() - o2.getSpeed();
+            }
+        });
 
+        System.out.println("\n\tThis is a platoon RED. Sorted by parameter <SPEED>\n");
+        platoonRed.forEach(n -> System.out.println(n.toString()));
+        System.out.println("\n");
         
     }    
 
@@ -42,5 +54,7 @@ public class Main {
         return String.valueOf(MilitarySpecialty.values()[new Random().nextInt(MilitarySpecialty.values().length)]);  
     }
 */  
+
+
 
 }
