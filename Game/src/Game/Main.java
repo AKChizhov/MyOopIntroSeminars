@@ -1,7 +1,6 @@
 package Game;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Random;
 import Game.Heroes.*;
 
@@ -26,20 +25,18 @@ public class Main {
         //platoon.forEach(n-> System.out.println(n.toString()));
 
         System.out.println("\n\tThis is a platoon BLUE of 10 fighters. Specialization received by Random");
-        DraftingAutoAll.MyRealSubdivision(1);// Формирование взвода BLUE
+        ArrayList<BaseHero> platoonBlue = DraftingAutoAll.MyRealSubdivision(1);// Формирование взвода BLUE
         System.out.println("\n\tThis is a platoon RED of 10 fighters. Specialization received by Random");
-        //DraftingAutoAll.MyRealSubdivision(0);// Формирование взвода RED
-        ArrayList<BaseHero> platoonRed = DraftingAutoAll.MyRealSubdivision(0);
+        ArrayList<BaseHero> platoonRed = DraftingAutoAll.MyRealSubdivision(0);// Формирование взвода RED
         
-        platoonRed.sort(new Comparator<BaseHero>() {
-            @Override
-            public int compare(BaseHero o1, BaseHero o2 ){
-                return o1.getSpeed() - o2.getSpeed();
-            }
-        });
-
         System.out.println("\n\tThis is a platoon RED. Sorted by parameter <SPEED>\n");
+        platoonRed = SortByParameter.MySorting(platoonRed);
         platoonRed.forEach(n -> System.out.println(n.toString()));
+        System.out.println("\n");
+
+        System.out.println("\n\tThis is a platoon Blue. Sorted by parameter <SPEED>\n");
+        platoonBlue = SortByParameter.MySorting(platoonBlue);
+        platoonBlue.forEach(n -> System.out.println(n.toString()));
         System.out.println("\n");
         
     }    
@@ -47,12 +44,5 @@ public class Main {
     private static String getname(){
         return String.valueOf(Names.values()[new Random().nextInt(Names.values().length)]);
     }
-/* 
-    private static String getMilitarySpeciality(){
-        String temp = String.valueOf(MilitarySpecialty.values()[new Random().nextInt(MilitarySpecialty.values().length)]);
-        System.out.println(temp);
-        return String.valueOf(MilitarySpecialty.values()[new Random().nextInt(MilitarySpecialty.values().length)]);  
-    }
-*/  
 
 }

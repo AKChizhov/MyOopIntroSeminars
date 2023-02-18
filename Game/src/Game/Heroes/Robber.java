@@ -3,7 +3,7 @@ package Game.Heroes;
 public class Robber extends Melee{
 
     public Robber(String nameCharacter, int strangulation) {
-        super(nameCharacter,9, 30, 50, 30, 10, 10);
+        super(nameCharacter,6, 30, 50, 30, 10, 10);
         
     }
     

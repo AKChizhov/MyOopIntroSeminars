@@ -3,7 +3,7 @@ package Game.Heroes;
 public class Mag extends Mental {
 
     public Mag(String nameCharacter, int slowdown) {
-        super(nameCharacter,18, 50, 60, 70, 5, 30);
+        super(nameCharacter,9, 50, 60, 70, 5, 30);
         
     }
     
