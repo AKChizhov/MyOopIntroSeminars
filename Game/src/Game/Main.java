@@ -3,7 +3,6 @@ package Game;
 import java.util.ArrayList;
 import java.util.Random;
 import Game.Heroes.*;
-import Game.Printing;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -21,10 +20,13 @@ public class Main {
         //System.out.println("\n\n\tThis is a list of the military specialties");
         //platoonHand = DraftingHand.ListOfSpecialties();
         
-        System.out.println("\n\tThis is a platoon BLUE of 10 fighters. Specialization received by Random");
+        System.out.println("\n\tThis is a platoon BLUE of 10 fighters. Specialization received by Random\n");
         ArrayList<BaseHero> platoonBlue = DraftingAutoAll.MyRealSubdivision(1);// Формирование взвода BLUE
-        System.out.println("\n\tThis is a platoon RED of 10 fighters. Specialization received by Random");
+        Printing.MyPrinting(platoonBlue);
+
+        System.out.println("\n\tThis is a platoon RED of 10 fighters. Specialization received by Random\n");
         ArrayList<BaseHero> platoonRed = DraftingAutoAll.MyRealSubdivision(0);// Формирование взвода RED
+        Printing.MyPrinting(platoonRed);
         
         System.out.println("\n\tThis is a platoon RED. Sorted by parameter <SPEED>\n");
         platoonRed = SortByParameter.MySorting(platoonRed);
@@ -33,8 +35,17 @@ public class Main {
         System.out.println("\n\tThis is a platoon Blue. Sorted by parameter <SPEED>\n");
         platoonBlue = SortByParameter.MySorting(platoonBlue);
         Printing.MyPrinting(platoonBlue);
+       
+        ArrayList<BaseHero> merge = new ArrayList<>();
+        merge.addAll(platoonBlue);
+        merge.addAll(platoonRed);
+        System.out.println("\n\tThis is the merged subdivision . Not Sorted by parameter <SPEED>\n");
+        Printing.MyPrinting(merge);
+        merge = SortByParameter.MySorting(merge);
+        System.out.println("\n\tThis is the merged subdivision . Sorted by parameter <SPEED>\n");
+        Printing.MyPrinting(merge);
         System.out.println("\n");
-        
+
     }    
 
     private static String getname(){

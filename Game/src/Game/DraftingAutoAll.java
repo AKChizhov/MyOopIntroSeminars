@@ -52,11 +52,7 @@ public class DraftingAutoAll {
 
         }
 
-        System.out.println("");
-        list.forEach(n -> System.out.println(n.toString()));
-        System.out.println("\n");
         return list;
-
     }
 
     private static String getname() {
