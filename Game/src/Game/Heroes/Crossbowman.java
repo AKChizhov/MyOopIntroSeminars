@@ -1,10 +1,11 @@
 package Game.Heroes;
 
 public class Crossbowman extends LongRange{
+    protected int univer;
 
     public Crossbowman(String nameCharacter,String side, int univer) {
-        super(nameCharacter,side,4, 40, 50, 30, 10, 60);
-        
+        super(nameCharacter,side,4, 3, 10, 3, 6, 16);
+        this.univer = univer;
     }
     
     @Override

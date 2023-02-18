@@ -1,10 +1,11 @@
 package Game.Heroes;
 
 public class Robber extends Melee{
+    protected int strangulation;
 
     public Robber(String nameCharacter,String side, int strangulation) {
-        super(nameCharacter,side,6, 30, 50, 30, 10, 10);
-        
+        super(nameCharacter,side,6, 3, 10, 3, 8, 0);
+        this.strangulation = strangulation;
     }
     
     @Override

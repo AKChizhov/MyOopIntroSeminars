@@ -3,7 +3,7 @@ package Game.Heroes;
 public class Sniper extends LongRange {
 
     public Sniper(String nameCharacter,String side, int disguise ) {
-        super(nameCharacter,side, 9, 100,  50, 10, 0, 50);
+        super(nameCharacter,side, 9, 9,  15, 10, 12, 32);
         
     }
     

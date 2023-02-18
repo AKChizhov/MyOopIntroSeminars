@@ -1,10 +1,11 @@
 package Game.Heroes;
 
 public class Monk extends Mental{
+    protected int acceleration;
 
     public Monk(String nameCharacter,String side, int acceleration) {
-        super(nameCharacter,side,5, 40, 100 , 60, 10, 20);
-        
+        super(nameCharacter,side,5, 4, 30 , 7, 12, 1);
+        this.acceleration = acceleration;
     }
     
     @Override

@@ -5,9 +5,9 @@ public class Archer extends LongRange{
     private int multyS;
     
     public Archer(String nameCharacter,String side, int multyS) {
-        super(nameCharacter,side,10, 50, 100, 20, 10, 10);
+        super(nameCharacter,side,10, 6, 13, 20, 9, 48);
         this.multyS = multyS;
-        super.damage = 30;
+        
     }
 
     public int getMultys(){

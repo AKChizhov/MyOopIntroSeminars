@@ -10,16 +10,16 @@ public abstract class BaseHero implements interFaceGame{
     protected int damage;
     protected int healthPoints;
     protected int defence;
-    protected int evolution;
+    protected int attack;
 
-    public BaseHero(String nameCharacter,String side,int speed, int damage ,int healthPoints,int defence,int evolution ) {
+    public BaseHero(String nameCharacter,String side,int speed, int damage ,int healthPoints,int defence,int attack ) {
         this.nameCharacter = nameCharacter;
         this.side = side;
         this.speed = speed;
         this.damage = damage;
         this.healthPoints = healthPoints;
         this.defence = defence;
-        this.evolution = evolution;
+        this.attack = attack;
 
         }
 

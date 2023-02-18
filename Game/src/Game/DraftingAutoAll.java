@@ -11,14 +11,14 @@ public class DraftingAutoAll {
     static ArrayList<BaseHero> MyRealSubdivision(int color) {
 
         ArrayList<BaseHero> list = new ArrayList<>();
-        int[] platoonRed = { 1, 2, 4, 5, 6 };
-        int[] platoonBlue = { 0, 2, 3, 7 };
+        int[] platoonRed = { 0, 2, 4, 6, 7 };//Список воинских специальностей взвода RED
+        int[] platoonBlue = { 1, 3, 4, 5 };//Список воинских специальностей взвода BLUE
         if (color == 1) {
             from = "BLUE";
-            platoon = platoonBlue.clone();
+            platoon = platoonBlue.clone();//Формируем взвод BLUE
         } else {
             from = "RED";
-            platoon = platoonRed.clone();
+            platoon = platoonRed.clone();//Формируем взвод RED
         }
         int count = 0;
         while (count < 10) {
@@ -38,7 +38,7 @@ public class DraftingAutoAll {
                     } else if (index == 3) {
                         list.add(new Monk(getname(), from,indexPower));
                     } else if (index == 4) {
-                        list.add(new Peasant(getname(),from, indexPower));
+                        list.add(new Peasant(getname(),from, 1));
                     } else if (index == 5) {
                         list.add(new Pikeman(getname(),from, indexPower));
                     } else if (index == 6) {
@@ -46,7 +46,7 @@ public class DraftingAutoAll {
                     } else if (index == 7) {
                         list.add(new Sniper(getname(),from, indexPower));
                     }
-                    count++;
+                    count++;//Пока не наберем 10 бойцов
                 }
             }
 

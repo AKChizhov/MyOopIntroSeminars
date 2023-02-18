@@ -1,10 +1,11 @@
 package Game.Heroes;
 
 public class Pikeman extends Melee{
+    protected int poison;
 
     public Pikeman(String nameCharacter,String side, int poison) {
-        super(nameCharacter,side,4, 40, 100, 50, 10,10);
-
+        super(nameCharacter,side,4, 2, 10, 5, 4,10);
+        this.poison = poison;
     }
     
     @Override
