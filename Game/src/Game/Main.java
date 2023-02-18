@@ -3,6 +3,7 @@ package Game;
 import java.util.ArrayList;
 import java.util.Random;
 import Game.Heroes.*;
+import Game.Printing;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -20,10 +21,6 @@ public class Main {
         //System.out.println("\n\n\tThis is a list of the military specialties");
         //platoonHand = DraftingHand.ListOfSpecialties();
         
-        //ArrayList<BaseHero> platoonAuto = new ArrayList<>();
-        //platoonAuto = DraftingAuto.MyRealSubdivision();
-        //platoon.forEach(n-> System.out.println(n.toString()));
-
         System.out.println("\n\tThis is a platoon BLUE of 10 fighters. Specialization received by Random");
         ArrayList<BaseHero> platoonBlue = DraftingAutoAll.MyRealSubdivision(1);// Формирование взвода BLUE
         System.out.println("\n\tThis is a platoon RED of 10 fighters. Specialization received by Random");
@@ -31,12 +28,11 @@ public class Main {
         
         System.out.println("\n\tThis is a platoon RED. Sorted by parameter <SPEED>\n");
         platoonRed = SortByParameter.MySorting(platoonRed);
-        platoonRed.forEach(n -> System.out.println(n.toString()));
-        System.out.println("\n");
+        Printing.MyPrinting(platoonRed);
 
         System.out.println("\n\tThis is a platoon Blue. Sorted by parameter <SPEED>\n");
         platoonBlue = SortByParameter.MySorting(platoonBlue);
-        platoonBlue.forEach(n -> System.out.println(n.toString()));
+        Printing.MyPrinting(platoonBlue);
         System.out.println("\n");
         
     }    

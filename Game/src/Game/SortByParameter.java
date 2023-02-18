@@ -11,6 +11,7 @@ public class SortByParameter {
         list.sort(new Comparator<BaseHero>() {
             @Override
             public int compare(BaseHero o1, BaseHero o2 ){
+                if(o2.getSpeed() == o1.getSpeed()) return o2.gethealthPoints() - o1.gethealthPoints();
                 return o2.getSpeed() - o1.getSpeed();
             }
         });

@@ -2,14 +2,14 @@ package Game.Heroes;
 
 public class Crossbowman extends LongRange{
 
-    public Crossbowman(String nameCharacter, int univer) {
-        super(nameCharacter,4, 40, 50, 30, 10, 60);
+    public Crossbowman(String nameCharacter,String side, int univer) {
+        super(nameCharacter,side,4, 40, 50, 30, 10, 60);
         
     }
     
     @Override
     public String toString(){
-        return " I'm a Crossbowman (арбалетчик) " + nameCharacter+ " из "+getClass()+" cо speed "+speed+" и hP "+healthPoints;
+        return " I'm a Crossbowman (арбалетчик) " + nameCharacter+ " из Platoon "+side+" cо SPEED "+speed+" и HP "+healthPoints;
     }   
     
     @Override
