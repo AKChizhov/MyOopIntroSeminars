@@ -9,7 +9,7 @@ public class Mag extends Mental {
     
     @Override
     public String toString(){
-        return " I'm a Mag ( маг ) " + nameCharacter + " из "+getClass()+" c hashCode "+hashCode();
+        return " I'm a Mag (маг) " + nameCharacter + " из "+getClass()+" cо speed "+speed+" и hP "+healthPoints;
     } 
     
     @Override

@@ -9,7 +9,7 @@ public class Crossbowman extends LongRange{
     
     @Override
     public String toString(){
-        return " I'm a Crossbowman (стрелок-арбалетчик ) " + nameCharacter+ " из "+getClass()+" c hashCode "+hashCode();
+        return " I'm a Crossbowman (арбалетчик) " + nameCharacter+ " из "+getClass()+" cо speed "+speed+" и hP "+healthPoints;
     }   
     
     @Override

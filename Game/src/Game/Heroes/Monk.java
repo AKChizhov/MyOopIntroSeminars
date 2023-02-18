@@ -9,7 +9,7 @@ public class Monk extends Mental{
     
     @Override
     public String toString(){
-        return " I'm a Monk ( монах ) " + nameCharacter +" из "+getClass()+" c hashCode "+hashCode();
+        return " I'm a Monk (монах) " + nameCharacter +" из "+getClass()+" cо speed "+speed+" и hP "+healthPoints;
     }   
     
     @Override
