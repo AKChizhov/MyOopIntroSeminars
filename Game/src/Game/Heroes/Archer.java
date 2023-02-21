@@ -4,12 +4,11 @@ public class Archer extends LongRange{
 
     private int multyS;
     
-    public Archer(String nameCharacter,String side, int multyS) {
-        super(nameCharacter,side,10, 6, 13, 20, 9, 48);
+    public Archer(String nameCharacter,String side,int xCoord , int yCoord, int multyS) {
+        super(nameCharacter,side,10,xCoord,yCoord, 6, 13, 20, 9, 48);
         this.multyS = multyS;
-        
     }
-
+    
     public int getMultys(){
         return multyS;
     }
@@ -27,7 +26,7 @@ public class Archer extends LongRange{
 
     @Override
     public String step(){
-
+        System.out.println(toString());
         return("");
     }
 

@@ -1,5 +1,7 @@
 package Game.Heroes;
 
+import java.net.CookieHandler;
+
 import Game.interFaceGame;
 
 public abstract class BaseHero implements interFaceGame{
@@ -11,8 +13,10 @@ public abstract class BaseHero implements interFaceGame{
     protected int healthPoints;
     protected int defence;
     protected int attack;
+    protected PointIntheField coord;
+    
 
-    public BaseHero(String nameCharacter,String side,int speed, int damage ,int healthPoints,int defence,int attack ) {
+    public BaseHero(String nameCharacter,String side,int speed,int xCoord,int yCoord, int damage ,int healthPoints,int defence,int attack ) {
         this.nameCharacter = nameCharacter;
         this.side = side;
         this.speed = speed;
@@ -20,6 +24,7 @@ public abstract class BaseHero implements interFaceGame{
         this.healthPoints = healthPoints;
         this.defence = defence;
         this.attack = attack;
+        coord = new PointIntheField(xCoord, yCoord);
 
         }
 

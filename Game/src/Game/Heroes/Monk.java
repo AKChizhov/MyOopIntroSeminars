@@ -3,8 +3,8 @@ package Game.Heroes;
 public class Monk extends Mental{
     protected int acceleration;
 
-    public Monk(String nameCharacter,String side, int acceleration) {
-        super(nameCharacter,side,5, 4, 30 , 7, 12, 1);
+    public Monk(String nameCharacter,String side,int xCoord,int yCoord, int acceleration) {
+        super(nameCharacter,side,5,xCoord,yCoord, 4, 30 , 7, 12, 1);
         this.acceleration = acceleration;
     }
     

@@ -2,8 +2,8 @@ package Game.Heroes;
 
 public class Sniper extends LongRange {
 
-    public Sniper(String nameCharacter,String side, int disguise ) {
-        super(nameCharacter,side, 9, 9,  15, 10, 12, 32);
+    public Sniper(String nameCharacter,String side,int xCoord, int yCoord,int disguise ) {
+        super(nameCharacter,side, 9,xCoord,yCoord, 9,  15, 10, 12, 32);
         
     }
     

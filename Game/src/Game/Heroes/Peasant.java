@@ -3,8 +3,8 @@ package Game.Heroes;
 public class Peasant extends BaseHero{
     protected int logistics;
     
-    public Peasant(String nameCharacter,String side, int logistics) {
-        super(nameCharacter,side,3,  1, 1, 1, 1);
+    public Peasant(String nameCharacter,String side,int xCoord,int yCoord,int logistics) {
+        super(nameCharacter,side,3, xCoord,yCoord, 1, 1, 1, 1);
         this.logistics = logistics;
     }
 

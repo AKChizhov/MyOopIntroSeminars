@@ -3,8 +3,8 @@ package Game.Heroes;
 public class Robber extends Melee{
     protected int strangulation;
 
-    public Robber(String nameCharacter,String side, int strangulation) {
-        super(nameCharacter,side,6, 3, 10, 3, 8, 0);
+    public Robber(String nameCharacter,String side,int xCoord,int yCoord,int strangulation) {
+        super(nameCharacter,side,6,xCoord,yCoord, 3, 10, 3, 8, 0);
         this.strangulation = strangulation;
     }
     
