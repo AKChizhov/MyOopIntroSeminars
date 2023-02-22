@@ -1,26 +1,27 @@
 package Game.Heroes;
 
-public class Peasant extends BaseHero{
+public class Peasant extends BaseHero {
     protected int logistics;
-    
-    public Peasant(String nameCharacter,String side,int xCoord,int yCoord,int logistics) {
-        super(nameCharacter,side,3, xCoord,yCoord, 1, 1, 1, 1);
+
+    public Peasant(String nameCharacter, String side, int xCoord, int yCoord, int logistics) {
+        super(nameCharacter, side, 3, xCoord, yCoord, 1, 1, 1, 1);
         this.logistics = logistics;
     }
 
     @Override
-    public String toString(){
-        return " I'm a Peasant (крестьянин) " + nameCharacter + " из PLATOON "+side+" cо SPEED "+speed+" и HP "+healthPoints;
-    }  
-    
-    @Override
-    public void getInfo(){
-           
+    public String toString() {
+        return "I'm a Peasant(крестьянин) " + nameCharacter + " из PLATOON " + side + " cо SPEED=" + speed + " и HP="
+                + healthPoints + " X=" + coord.x + " Y=" + coord.y;
     }
 
     @Override
-    public String step(){
+    public void getInfo() {
 
-        return("");
+    }
+
+    @Override
+    public String step() {
+        System.out.println(toString());
+        return ("");
     }
 }

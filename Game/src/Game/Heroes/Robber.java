@@ -1,26 +1,27 @@
 package Game.Heroes;
 
-public class Robber extends Melee{
+public class Robber extends Melee {
     protected int strangulation;
 
-    public Robber(String nameCharacter,String side,int xCoord,int yCoord,int strangulation) {
-        super(nameCharacter,side,6,xCoord,yCoord, 3, 10, 3, 8, 0);
+    public Robber(String nameCharacter, String side, int xCoord, int yCoord, int strangulation) {
+        super(nameCharacter, side, 6, xCoord, yCoord, 3, 10, 3, 8, 0);
         this.strangulation = strangulation;
     }
-    
+
     @Override
-    public String toString(){
-        return " I'm a Robber (разбойник) " + nameCharacter +" из PLATOON "+side+" cо SPEED "+speed+" и HP "+healthPoints;
-    }  
-    
-    @Override
-    public void getInfo(){
-           
+    public String toString() {
+        return "I'm a Robber(разбойник) " + nameCharacter + " из PLATOON " + side + " cо SPEED=" + speed + " и HP="
+                + healthPoints + "X=" + coord.x + "Y=" + coord.y;
     }
 
     @Override
-    public String step(){
+    public void getInfo() {
 
-        return("");
+    }
+
+    @Override
+    public String step() {
+
+        return ("");
     }
 }

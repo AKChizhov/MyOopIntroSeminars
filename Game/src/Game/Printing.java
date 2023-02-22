@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import Game.Heroes.BaseHero;
 
 public class Printing {
-    public static void MyPrinting(ArrayList<BaseHero> list){
-        list.forEach(n-> n.step());
-      
+    public static void MyPrinting(ArrayList<BaseHero> list) {
+        list.forEach(n -> n.step());
+
     }
 }
