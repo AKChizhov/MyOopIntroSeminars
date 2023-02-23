@@ -17,7 +17,6 @@ public class Main {
          * System.out.println(Tim.StrikeLong(0, 20, 0));
          * list.forEach(n-> System.out.println(n.toString()));
          */
-
         System.out.println("\n\tThis is a platoon BLUE of 10 fighters. Specialization received by Random\n");
         ArrayList<BaseHero> platoonBlue = DraftingAutoAll.MyRealSubdivision(1);// Формирование взвода BLUE
         Printing.MyPrinting(platoonBlue);
