@@ -40,7 +40,7 @@ public class Main {
                                                                  // подразделения
         System.out.println("\n\tThis is the joint division . Sorted by parameter <SPEED>\n");
         Printing.MyPrinting(unitedWarrior);
-        System.out.println("\n\tThis is the distance calculate\n");
+    
         System.out.println("\n");
         
        
