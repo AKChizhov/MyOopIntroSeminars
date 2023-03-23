@@ -29,15 +29,24 @@ public class Archer extends LongRange {
     public void getInfo() {
 
     }
-
+/* 
     @Override
-    public String step() {
+    public void calculate() {
      
         System.out.println(toString());
         
         System.out.print(side+".........\n");
         
-        return ("");
+        //PointIntheField.calculate(warriers);
+        //Math.sqrt( Math.pow( (x-enemy.x), 2 ) + Math.pow( (y-enemy.y), 2 ));
+        //Math.sqrt( Math.pow( (x-platoonBlue.x), 2 ) + Math.pow( (y-platoonBlue.y), 2 ));
+        //return ("");
     }
-
+*/
+@Override
+public String step() {
+    System.out.println(toString());
+    return ("");
 }
+}
+    

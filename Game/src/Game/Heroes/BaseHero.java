@@ -17,6 +17,7 @@ public abstract class BaseHero implements interFaceGame{
     protected PointIntheField coord;
     protected ArrayList<BaseHero> warriers;
     
+    protected int dist;
 
     public BaseHero(String nameCharacter,String side,int speed,int xCoord,int yCoord, int damage ,int healthPoints,int defence,int attack ) {
         this.nameCharacter = nameCharacter;
@@ -49,6 +50,10 @@ public abstract class BaseHero implements interFaceGame{
             return healthPoints;
         }
 
+       // public void calculate() {
+            //return dist;
+       // }
+        
         public void setWarries(ArrayList<BaseHero> warriers){
 
             this.warriers = warriers;
